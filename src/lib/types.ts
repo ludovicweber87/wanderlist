@@ -4,6 +4,8 @@ export interface Destination {
 	country: string;
 	nights: number;
 	costPerNight: number;
+	/** Travellers staying at this destination. Omitted means the whole group. */
+	travellers?: string[];
 }
 
 export interface Trip {
